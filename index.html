@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tricell Laboratories Inc.</title>
+    <title>Welcome – Tricell Laboratories Inc.</title>
     <meta name="Publisher" content="Tricell Laboratories">
     <meta name="Keywords" content="pharmaceutical, pharmaceuticals, medicine, cure, virus, research, secret, top-secret">
 
@@ -16,6 +16,8 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </head>
 <body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
 <!---- Header Start ---->
 <header>
@@ -86,7 +88,7 @@
             <div class="d-md-none navbar-aside">
                 <section class="login-container">
                     <h3>Staff Login</h3>
-                    <form name="loginformMobile" action="" onsubmit="return loginFormCheck()" method="post">
+                    <form name="loginformMobile" action="" onsubmit="return loginFormCheck(this)" method="post">
                         <label for="employeeCodeMobile">Employee code:</label>
                         <input type="text" name="employeecode" id="employeeCodeMobile" class="login-input" size="7" maxlength="7">
                         <label for="passwordMobile">Password</label>
@@ -99,9 +101,9 @@
                 </section>
 
                 <ul class="aside-container">
-                    <li class="my-button2">knapp 4</li>
-                    <li class="my-button2">kanpp 5</li>
-                    <li class="my-button2">knapp 6</li>
+                    <li><a class="my-button2" href="pharmaceutical_research.html">Our Research</a></li>
+                    <li><a class="my-button2" href="natural_resources.html">Sustainability</a></li>
+                    <li><a class="my-button2" href="international_suppliers.html">Global Network</a></li>
                 </ul>
             </div>
         </div>
@@ -110,14 +112,14 @@
 <!---- Top menu End ---->
 
 <!---- Info Start ---->
-<main>
+<main id="main-content">
 <div class="container">
 <div class="row justify-content-center">
 
     <div class="col-md-9">
-        <article>
-<h2>Welcome to Tricell Laboratories Inc.</h2>
-        <img src="images/featuredimage_index.jpg" alt="featuredimage_index" class="img-fluid main-logo">
+        <article tabindex="0">
+<h1>Welcome to Tricell Laboratories Inc.</h1>
+        <img src="images/featuredimage_index.jpg" alt="Two Tricell scientists in lab coats examining test tubes in a laboratory" class="img-fluid main-logo">
 
 
 	<br /><br />
@@ -150,7 +152,7 @@
         <aside>
             <section class="login-container">
                 <h3>Staff Login</h3>
-                <form name="loginform" action="" onsubmit="return loginFormCheck()" method="post">
+                <form name="loginform" action="" onsubmit="return loginFormCheck(this)" method="post">
                     <label for="employeeCode">Employee code:</label>
                     <input type="text" name="employeecode" id="employeeCode" class="login-input" size="7" maxlength="7">
                     <label for="password">Password</label>
@@ -164,9 +166,9 @@
 
             <nav id="rightnav">
                 <ul class="aside-container">
-                    <li class="my-button2">knapp 4</li>
-                    <li class="my-button2">kanpp 5</li>
-                    <li class="my-button2">knapp 6</li>
+                    <li><a class="my-button2" href="pharmaceutical_research.html">Our Research</a></li>
+                    <li><a class="my-button2" href="natural_resources.html">Sustainability</a></li>
+                    <li><a class="my-button2" href="international_suppliers.html">Global Network</a></li>
                 </ul>
             </nav>
         </aside>
@@ -200,7 +202,7 @@
             <p>555-456 68768</p>
         </div>
         <div class="col-md-2 text-center">
-            <img src="images/biohazard.png" class="footer-logo" alt="Tricell Logo">
+            <img src="images/biohazard.png" class="footer-logo" alt="Biohazard symbol">
         </div>
     </div>
 </footer>
